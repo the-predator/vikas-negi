@@ -1,6 +1,8 @@
 import React from 'react'
-import profile from './assets/profile.jpg'
 import { Fade } from 'react-reveal'
+import profile from './assets/profile.jpg'
+import resume from './assets/resume.pdf'
+
 
 function About() {
   return (
@@ -14,11 +16,11 @@ function About() {
           <div className="col-md-6 col-sm-12">
             <div className="about-wrapper__image load-hidden">
               <img
+                src={profile}
                 alt="Profile"
                 className="img-fluid rounded shadow-lg"
-                height="auto"
                 width="300px"
-                src={profile}
+                height="auto"
                 style={{borderRadius: "50%"}}
               />
             </div>
@@ -38,7 +40,7 @@ function About() {
                   rel="noreferrer"
                   target="_blank"
                   className="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href={resume}
                 >
                   View Resume
                 </a>
