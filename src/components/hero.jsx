@@ -6,7 +6,7 @@ function Hero() {
   return (
       <section id="hero" className="jumbotron">
       <div className="container">
-        <Fade>
+        <Fade left>
         <h1 className="hero-title load-hidden">
           Hi, my name is <span className="text-color-main">Vikas Negi</span>
           <br />

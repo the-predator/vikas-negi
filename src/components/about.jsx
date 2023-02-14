@@ -1,11 +1,15 @@
 import React from 'react'
 import profile from './assets/profile.jpg'
+import { Fade } from 'react-reveal'
 
 function About() {
   return (
       <section id="about">
       <div className="container">
+        <Fade left>
         <h2 className="section-title load-hidden">About me</h2>
+        </Fade>
+        <Fade left>
         <div className="row about-wrapper">
           <div className="col-md-6 col-sm-12">
             <div className="about-wrapper__image load-hidden">
@@ -42,6 +46,7 @@ function About() {
             </div>
           </div>
         </div>
+        </Fade>
       </div>
     </section>
   )

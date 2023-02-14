@@ -1,14 +1,19 @@
 import React from 'react'
+import { Fade } from 'react-reveal'
 import '../styles.scss'
 import project1 from './assets/project1.png'
 import project2 from './assets/project2.png'
 import project3 from './assets/project3.png'
+
 function Projects() {
   return (
     <section id="projects">
     <div className="container">
       <div className="project-wrapper">
+        <Fade left>
         <h2 className="section-title dark-blue-text">Projects</h2>
+        </Fade>
+        <Fade left>
         <div className="row">
           <div className="col-lg-4 col-sm-12">
             <div className="project-wrapper__text load-hidden">
@@ -57,7 +62,8 @@ function Projects() {
             </div>
           </div>
         </div>
-
+        </Fade>
+        <Fade left>
         <div className="row">
           <div className="col-lg-4 col-sm-12">
             <div className="project-wrapper__text load-hidden">
@@ -107,6 +113,8 @@ function Projects() {
             </div>
           </div>
         </div>
+        </Fade>
+        <Fade left>
         <div className="row">
           <div className="col-lg-4 col-sm-12">
             <div className="project-wrapper__text load-hidden">
@@ -156,6 +164,7 @@ function Projects() {
             </div>
           </div>
         </div>
+        </Fade>
       </div>
     </div>
   </section>
