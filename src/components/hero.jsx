@@ -12,7 +12,8 @@ function Hero() {
           <br />
           I'm a Full Stack Web Developer.
         </h1>
-        
+        </Fade>
+        <Fade left>
         <p className="hero-cta load-hidden">
           <a rel="noreferrer" className="cta-btn cta-btn--hero" href="#about">Know more </a>
         </p>

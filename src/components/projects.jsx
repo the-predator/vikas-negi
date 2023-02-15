@@ -1,5 +1,6 @@
 import React from 'react'
 import { Fade } from 'react-reveal'
+import Tilt from 'react-parallax-tilt';
 import '../styles.scss'
 import project1 from './assets/project1.png'
 import project2 from './assets/project2.png'
@@ -10,13 +11,14 @@ function Projects() {
     <section id="projects">
     <div className="container">
       <div className="project-wrapper">
-        <Fade left>
+        <Fade bottom>
         <h2 className="section-title dark-blue-text">Projects</h2>
         </Fade>
-        <Fade left>
+       
         <div className="row">
           <div className="col-lg-4 col-sm-12">
             <div className="project-wrapper__text load-hidden">
+            <Fade left>
               <h3 className="project-wrapper__text-title">Face Detection Site</h3>
               <div>
                 <p className="mb-4">
@@ -40,29 +42,29 @@ function Projects() {
                 href="https://github.com/the-predator/facerecognition" >
                 Source Code
               </a>
+              </Fade>
             </div>
           </div>
           <div className="col-lg-8 col-sm-12">
             <div className="project-wrapper__image load-hidden">
               <a rel="noreferrer" href="#!" target="_blank">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  className="thumbnail rounded js-tilt"
-                  >
+               <Fade right>
+               <Tilt glareEnable={true} tiltMaxAngleX={3} 
+                  tiltMaxAngleY={3} perspective={1000} 
+                   glareColor={"rgb(255,0,0)"}>
+               <div>
                   <img
                     alt='Project1'
                     className="img-fluid"
                     src={project1}
                   />
                 </div>
+               </Tilt>
+                </Fade>
               </a>
             </div>
           </div>
         </div>
-        </Fade>
         <Fade left>
         <div className="row">
           <div className="col-lg-4 col-sm-12">
@@ -96,25 +98,23 @@ function Projects() {
           <div className="col-lg-8 col-sm-12">
             <div className="project-wrapper__image load-hidden">
               <a rel="noreferrer" href="#!" target="_blank">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  className="thumbnail rounded js-tilt"
-                >
+              <Tilt glareEnable={true} tiltMaxAngleX={3} 
+                  tiltMaxAngleY={3} perspective={1000} 
+                   glareColor={"rgb(255,0,0)"}>
+                  <div>
                   <img
                   alt='Project2'
                     className="img-fluid"
                     src={project2}
                   />
                 </div>
+                </Tilt>
               </a>
             </div>
           </div>
         </div>
         </Fade>
-        <Fade left>
+        <Fade bottom>
         <div className="row">
           <div className="col-lg-4 col-sm-12">
             <div className="project-wrapper__text load-hidden">
@@ -147,19 +147,17 @@ function Projects() {
           <div className="col-lg-8 col-sm-12">
             <div className="project-wrapper__image load-hidden">
               <a rel="noreferrer" href="#!" target="_blank">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  className="thumbnail rounded js-tilt"
-                >
+              <Tilt glareEnable={true} tiltMaxAngleX={3} 
+                  tiltMaxAngleY={3} perspective={1000} 
+                   glareColor={"rgb(255,0,0)"}>
+                <div>
                   <img
                     alt='Project3'
                     className="img-fluid"
                     src={project3}
                   />
                 </div>
+                </Tilt>
               </a>
             </div>
           </div>

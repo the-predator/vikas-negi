@@ -8,7 +8,7 @@ function Footer() {
           <i className="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div className="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://twitter.com/VikasNe97228772?t=6aLf9uhcINc5ElsRu-_RLw&s=35" target="_blank">
             <i className="fa fa-twitter fa-inverse"></i>
           </a>
           <a rel="noreferrer" href="https://linkedin.com/in/vikas-negi-770116252" target="_blank">
